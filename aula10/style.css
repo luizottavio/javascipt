@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{
+    background-color: rebeccapurple;
+    font: 20px Arial;
+    text-align: center;
+
+}
+div{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+div#res{
+    margin-top: 50px;
+    margin-left: 490px;
+    
+}
+input{
+    font: normal Arial;
+    height: 30px;
+    width: 200px;
+}
