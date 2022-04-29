@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: turquoise;
+            font: normal 1.2em Arial;
+            text-align: center;
+        }
+        main {
+            background-color: rgb(236, 226, 226);
+            width: 710px;
+            height: 350px;
+            text-align: center;
+            margin: auto;
+            padding: auto;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+        }
+        input {
+            width: 150px;
+            height: 30px;
+            
+        }
+        div#res {
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body> 
+    <main>
+        <h1>Some qualquer valores e veja o resultado!!</h1> 
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="res">Resultado!!</div>
+    </main>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerText = `A soma de ${n1} + ${n2} é iqual a ${s}`
+        }
+    </script>
+</body>
+</html>

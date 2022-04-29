@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+           body{
+        background-color: rgb(153, 65, 77);
+        
+    }
+    div#area {
+        font: normal 1.6em Arial;
+        background-color: rgb(59, 223, 59);
+        color: white;
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        Interaja!
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'clicou!!!'
+            a.style.background = 'black'
+            a.style.color = 'white'
+        }
+        function entrar() {
+            a.innerText = 'entrou!!!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+        function sair() {
+            a.innerText = 'saiu.'
+            a.style.background = 'red'
+            a.style.color = 'blue'
+            
+        }
+    </script>
+
+</body>
+</html>
