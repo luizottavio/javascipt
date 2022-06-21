@@ -8,18 +8,21 @@
 </head>
 <body>
     <h1>Sismeta de verificação de nacionalidade!</h1>
-    De Qual pais Você é <input type="text" id="text">
-    <input type="button" value="varificar" onclick="calcular()">
+    De Qual pais Você <input type="text" id="txtpais">
+    <input type="button" value="verificar" onclick="verificar()">
     <div id="res">
 
     </div>
     <script>
         function calcular () {
-            var txtpais = window.document.getElementById('text')
-            var res = window.document.querySelector('div#res')
-            res.innerHTML = `Bom saber que você é de  ${txpais}`
+            var txtpais = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `Que bom saber que você é de ${txtpais}`
+            
+
+            
+
         }
     </script>
-
 </body>
 </html>
