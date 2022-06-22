@@ -7,7 +7,7 @@
     <title>Qual é o seu pais?</title>
 </head>
 <body>
-    <h1>Sismeta de verificação de nacionalidade!</h1>
+    <h1>Sismeta de verificação de nacionalidade Brasileira!</h1>
     De Qual pais Você <input type="text" id="txtpais">
     <input type="button" value="verificar" onclick="verificar()">
     <div id="res">
@@ -17,10 +17,12 @@
         function calcular () {
             var txtpais = window.document.getElementById('txtpais')
             var res = window.document.getElementById('res')
+            var pais = (txtpais.value)
             res.innerHTML = `Que bom saber que você é de ${txtpais}`
-            
 
             
+
+        
 
         }
     </script>
